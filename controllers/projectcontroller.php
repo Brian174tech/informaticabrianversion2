@@ -1,21 +1,20 @@
 <?php
 
 
-class ExperimentController{
+class ProjectController{
 
     function __construct()
     {
 
         include_once 'views/render.php';
         $render = new Render();
-        $pageType = 'Experimentpage';
-        $pageRequest = 'experiment <placeholder>';
+        $pageType = 'Projectpage';
+        $pageRequest = 'projecten maak een keuze';
         $render->setPage($pageType, $pageRequest);
         $render->buildPage();
 
     }
 
-
 }
-  
-new ExperimentController;
+
+new ProjectController;
