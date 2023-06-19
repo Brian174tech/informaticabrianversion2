@@ -8,8 +8,8 @@ class AssessmentController{
 
         include_once 'views/render.php';
         $render = new Render();
-        $pageType = 'Assessmentpage';
-        $pageRequest = 'assessment periode <placeholder>';
+        $pageType = 'Assessment';
+        $pageRequest = $_GET['request'];
         $render->setPage($pageType, $pageRequest);
         $render->buildPage();
 

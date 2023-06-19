@@ -11,10 +11,10 @@
         </ul>
         <nav class="navbutton">
           <ul id="menuitems" class="menuitems">
-            <li class="dropdown"><a>Assignments</a><a class="dropdown-content" href="old" target="_blank"> Assignments-P1</a><a class="dropdown-content2" href="assignmentsp2">Assignments-P4</a></li>
-            <li class="dropdown"><a>Assessments</a><a class="dropdown-content" href="assessment">Assessment-P1</a><a class="dropdown-content2" href="assessment/assessmentp2.php">Assessment-P2</a></li>
-            <li><a href="experiments">Experiments</a></li>
-            <li><a href="projects">Projects</a></li>
+            <li class="dropdown"><a>Assignments</a><a class="dropdown-content" href="?page=assignment&request=assignmentp1"> Assignments-P1</a><a class="dropdown-content2" href="?page=assignment&request=assignmentp4">Assignments-P4</a></li>
+            <li class="dropdown"><a>Assessments</a><a class="dropdown-content" href="?page=assessment&request=assessmentp1">Assessment-P1</a><a class="dropdown-content2" href="?page=assessment&request=assessmentp2">Assessment-P2</a></li>
+            <li><a href="?page=experiment&request=experiment1">Experiments</a></li>
+            <li><a href="?page=project&request=project1">Projects</a></li>
           </ul>
         </nav>
       </nav>

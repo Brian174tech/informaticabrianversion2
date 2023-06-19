@@ -1,9 +1,9 @@
 <?php
 
-if (isset($_GET['page'])) {
+if (isset($_GET['page']) && isset( $_GET['request'])) {
     $requestUrl = $_GET['page'];
 } else {
-    $requestUrl = 'home';
+    $requestUrl = 'no';
 }
 
 // Define your routes
@@ -21,5 +21,5 @@ if (isset($routes[$requestUrl])) {
     include_once "controllers/$controller.php";
 
 } else {
-    echo 'foutje bedankt';
+    echo "You are being naughty arn't you";
 }

@@ -8,8 +8,8 @@ class AssignmentController{
 
         include_once 'views/render.php';
         $render = new Render();
-        $pageType = 'Assignmentpage';
-        $pageRequest = 'assignment periode <placeholder>';
+        $pageType = 'Assignment';
+        $pageRequest = $_GET['request'];
         $render->setPage($pageType, $pageRequest);
         $render->buildPage();
 

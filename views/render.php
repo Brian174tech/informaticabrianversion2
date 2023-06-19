@@ -31,7 +31,7 @@ class Render{
         $title = $key;
         $content = $value;
 
-        echo "$title<br>$content<br>";
+        echo "trying to load page: $title with content: $content";
 
         if (!empty($this->data)){
             $showData = $this->data;
@@ -39,8 +39,24 @@ class Render{
                 echo"<br>$data<br>";
             }
         }else{
-            echo '<br>no data<br>';
+            echo '<br>no data given';
         }
+
+        require_once 'views/'.$title.'view.php';
+            $titleView = $title.'View';
+            $view = new $titleView;
+
+        if (method_exists($view, $content)){
+            
+            $view->$content();
+
+        } else{
+
+            echo '<br>requested content does not exist';
+
+        }
+        
+
 
     }
 

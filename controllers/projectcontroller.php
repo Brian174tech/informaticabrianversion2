@@ -8,8 +8,8 @@ class ProjectController{
 
         include_once 'views/render.php';
         $render = new Render();
-        $pageType = 'Projectpage';
-        $pageRequest = 'projecten maak een keuze';
+        $pageType = 'Project';
+        $pageRequest = $_GET['request'];
         $render->setPage($pageType, $pageRequest);
         $render->buildPage();
 
