@@ -35,5 +35,4 @@ if (isset($_SESSION['error'])) {
 </section>
 
 <main class="contentmain">
-    <!-- <h1><?php echo $title; ?></h1> -->
 
