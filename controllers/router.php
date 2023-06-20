@@ -3,7 +3,7 @@
 if (isset($_GET['page']) && isset( $_GET['request'])) {
     $requestUrl = $_GET['page'];
 } else {
-    $requestUrl = 'no';
+    $requestUrl = 'home';
 }
 
 // Define your routes

@@ -7,7 +7,7 @@
     <nav class="navbar">
       <nav class="navflex">
         <ul class=breadcrumb>
-          <li id="currentpage">Home</a></li>
+          <li><a href="?">Home</a></li>
         </ul>
         <nav class="navbutton">
           <ul id="menuitems" class="menuitems">

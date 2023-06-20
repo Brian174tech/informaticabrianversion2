@@ -21,7 +21,7 @@ class AssignmentView{
     function assignmentp4()
     {
 
-        echo'<br> Loaded: assignmentp2 function';
+        echo'<br> Loaded: assignmentp4 function';
 
     }
 

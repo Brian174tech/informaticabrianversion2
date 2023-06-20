@@ -8,8 +8,8 @@ class HomeController{
 
         include_once 'views/render.php';
         $render = new Render();
-        $pageType = 'Homepage';
-        $pageRequest = 'welkomst-bericht';
+        $pageType = 'Home';
+        $pageRequest = 'viewHome';
         $render->setPage($pageType, $pageRequest);
         $render->buildPage();
 
