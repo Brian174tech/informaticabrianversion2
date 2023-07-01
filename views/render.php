@@ -50,7 +50,7 @@ class Render
 
         if ($title != 'Home') {
 
-            echo $title.' / '.$content;
+            echo '<nav class="currentpage">'.$title.' / '.$content.'</nav>';
             $view = new $titleView;
 
             if (method_exists($view, $content)) {

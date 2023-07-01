@@ -103,10 +103,15 @@ body {
   .navflex li a {
     margin-right: 10px;
   }
+  .currentpage{
+    font-style:italic;
+    font-weight: 0.8em;
+  }
   #currentpage {
     color: var(--yellow700);
     margin-left: 10px;
   }
+
   .menuitems {
     display: flex;
   }
@@ -133,6 +138,7 @@ body {
   /* navigation segment ++++++++++++++++++++++ end */
   .contentmain {
     display: flex;
+    flex-direction: column;
     max-width: 1200px;
     min-width: 380px;
     margin: 0;
