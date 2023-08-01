@@ -1,12 +1,10 @@
 <?php
 
-class AssignmentView{
+class AssignmentView
+{
 
     function __construct()
     {
-
-
-
     }
 
     function assignmentp1()
@@ -31,15 +29,100 @@ class AssignmentView{
             
             </p>
         ';
-
     }
 
 
     function assignmentp4()
     {
+        echo '<h4>PHP, OOP and MySQL</h4>
+        <p>
+        <h5>Sample 1: for loop</h5>
+        <pre>
+        &lt;?php
+            for ( $i = 1; $i <= 10; $i++) {
+                echo $i ;
+            }
+        ?&gt;
+            </pre>
+                <p>
+                    Result:';
+        for ($i = 1; $i <= 10; $i++) {
+            echo $i;
+        }
+        echo '
+                </p><br>
+                <h5>Sample 2: while loop</h5>
+                <pre>
+        &lt;?php
+            $i = 1; 
+            while ( $i <= 10 ) {
+                echo $i ;
+                $i++ ;
+            }
+        ?&gt;
+            </pre>
+                <p>
+                    Result:';
+        $i = 1;
+        while ($i <= 10) {
+            echo $i;
+            $i++;
+        }
+        echo '        </p><br>
+                <h5>Sample 3: do while </h5>
+                <pre>
+        &lt;?php
+            $i = 0; 
+            do {
+                echo $i ;
+                $i++;
+            } while ( $i <= 10 ); 
+        ?&gt;
+            </pre></p>
+        <p>
+            Result:';
+        $i = 1;
+        do {
+            echo $i;
+            $i++;
+        } while ($i <= 10);
 
-        echo'<br> Loaded: assignmentp4 function';
+        echo '</p><br>
+        <h5>Sample 4: functies </h5>
+        <p>
+            substr("Willy Wonka", 4); <br>
+            result:';
+        echo substr("Willy Wonka", 4);
+        echo ' <br><br>
+            is_numeric(32); is_numeric(true) <br>
+            result:';
+        echo is_numeric(32);
+        echo is_numeric(true);
+        echo '<br><br>';
+        echo 'if (isset(null)); if (isset(4)) echo<br>
+            result:';
+        $a = null;
+        if (isset($a)) {
+            echo "Variable 1# is set.<br>";
+        } else {
+            echo "Variable 1# is NOT set.<br>";
+        }
+        echo '
+            result: ';
+        $b = 4;
+        if (isset($b)) {
+            echo "Variable 2# is set.<br>";
+        } else {
+            echo "Variable 2# is NOT set.<br>";
+        };
+        echo '<br>
+            mail("someone@example.com","My subject",$msg);<br>
+            result: Check your email inbox.
+        </p><br>
+        
+        
+        ';
 
+        echo '<br> Loaded: assignmentp4 function';
     }
-
 }
