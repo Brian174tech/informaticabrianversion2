@@ -118,10 +118,7 @@ class AssignmentView
         echo '<br>
             mail("someone@example.com","My subject",$msg);<br>
             result: Check your email inbox.
-        </p><br>
-        
-        
-        ';
+        </p><br>';
 
         echo '<br> Loaded: assignmentp4 function';
     }
